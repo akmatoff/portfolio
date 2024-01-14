@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #d1cfcf;
+  --accent-color: #537564;
+  --text-color: #2e3735;
+  --shadow-color: #537564;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+  font-family: IBM Plex Sans, sans-serif;
+  cursor: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: none;
+}

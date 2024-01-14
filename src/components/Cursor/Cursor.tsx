@@ -1,0 +1,16 @@
+import { motion } from "framer-motion";
+import { useMouseAnimate } from "../../hooks/useMouseAnimate";
+
+function Cursor() {
+  const { mouseState, variants } = useMouseAnimate();
+
+  return (
+    <motion.div
+      variants={variants}
+      animate={mouseState.variant}
+      className="w-8 h-8 fixed left-0 top-0 z-10 border border-accent rounded-full pointer-events-none"
+    ></motion.div>
+  );
+}
+
+export default Cursor;
