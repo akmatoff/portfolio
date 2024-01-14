@@ -23,7 +23,11 @@ function HeroSection() {
           >
             FRONT-END DEVELOPER BASED IN KYRGYZSTAN
           </div>
-          <div className="flex mt-4 text-3xl">
+          <div
+            className="flex mt-4 text-3xl"
+            onMouseEnter={() => setCurrentVariant("hover")}
+            onMouseLeave={() => setCurrentVariant("default")}
+          >
             <a
               className="hover:text-accent transition-colors mr-4"
               href={SOCIAL_LINKS.github}

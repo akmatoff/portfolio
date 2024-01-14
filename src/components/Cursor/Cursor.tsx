@@ -8,6 +8,9 @@ function Cursor() {
     <motion.div
       variants={variants}
       animate={mouseState.variant}
+      transition={{
+        type: "tween",
+      }}
       className="w-8 h-8 fixed left-0 top-0 z-10 border border-accent rounded-full pointer-events-none"
     ></motion.div>
   );

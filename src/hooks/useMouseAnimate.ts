@@ -17,9 +17,9 @@ export const useMouseAnimate = () => {
     hover: {
       x: context.mouseState.position.x - 16,
       y: context.mouseState.position.y - 16,
-      width: 64,
-      height: 64,
-      backgroundColor: "var(--primary-color)",
+      width: 72,
+      height: 72,
+      backgroundColor: "var(--secondary-color)",
       mixBlendMode: "difference",
     },
   };
