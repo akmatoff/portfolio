@@ -6,18 +6,18 @@ function HeroSection() {
   const { setCurrentVariant } = useMouseAnimate();
 
   return (
-    <section className="flex flex-col justify-center w-screen min-h-screen p-20">
-      <div className="flex w-full p-10">
+    <section className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-20">
+      <div className="flex w-full">
         <div>
           <div
-            className="text-8xl font-bold"
+            className="text-4xl md:text-6xl lg:text-8xl font-bold"
             onMouseEnter={() => setCurrentVariant("hover")}
             onMouseLeave={() => setCurrentVariant("default")}
           >
             AZIM AKMATOV
           </div>
           <div
-            className="font-light text-lg"
+            className="font-light text-md md:text-lg"
             onMouseEnter={() => setCurrentVariant("hover")}
             onMouseLeave={() => setCurrentVariant("default")}
           >
