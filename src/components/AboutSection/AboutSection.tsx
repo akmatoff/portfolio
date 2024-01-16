@@ -1,11 +1,21 @@
+import { useMouseAnimate } from "../../hooks/useMouseAnimate";
+
 function AboutSection() {
+  const { setCurrentVariant } = useMouseAnimate();
+
   return (
     <section
       id="about"
       className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-40"
     >
       <div className="flex flex-col w-full text-xl md:text-2xl md:px-48">
-        <div className="font-bold mb-4">ABOUT</div>
+        <div
+          className="font-bold mb-4 text-6xl"
+          onMouseEnter={() => setCurrentVariant("hover")}
+          onMouseLeave={() => setCurrentVariant("default")}
+        >
+          ABOUT
+        </div>
 
         <p>
           I'm a front-end developer who is passionate about bringing into life

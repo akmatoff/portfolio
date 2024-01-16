@@ -19,7 +19,7 @@ export const useMouseAnimate = () => {
       y: context.mouseState.position.y - 32,
       width: 72,
       height: 72,
-      backgroundColor: "var(--secondary-color)",
+      backgroundColor: "var(--text-color)",
       mixBlendMode: "difference",
     },
   };

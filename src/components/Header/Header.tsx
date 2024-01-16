@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import cn from "classnames";
 import { useMouseAnimate } from "../../hooks/useMouseAnimate";
 import Avatar from "../Avatar/Avatar";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 function Header() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -21,7 +22,7 @@ function Header() {
           setActiveSection(visibleSection.id);
         }
       },
-      { threshold: 0.7 }
+      { threshold: 0.55 }
     );
 
     const sections = document.querySelectorAll("section");
@@ -39,9 +40,11 @@ function Header() {
 
   return (
     <div className="flex fixed items-center w-screen h-24 p-10">
-      <Avatar />
+      <Avatar
+        className={activeSection !== "hero" ? "opacity-100" : "opacity-0"}
+      />
 
-      <div className="flex bg-accent bg-opacity-20 bg-blur backdrop-blur p-1 rounded-full text-sm font-light">
+      <div className="hidden md:flex bg-accent bg-opacity-20 bg-blur backdrop-blur p-1 rounded-full text-sm font-light">
         <a className="text-primary-text" href="#hero">
           <div
             className={cn(
@@ -92,7 +95,9 @@ function Header() {
         </a>
       </div>
 
-      <div className="flex-1"></div>
+      <MobileMenu />
+
+      <div className="hidden md:block flex-1"></div>
     </div>
   );
 }

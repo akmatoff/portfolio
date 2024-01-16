@@ -2,6 +2,7 @@ import { SOCIAL_LINKS } from "../../constants/common";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import { useMouseAnimate } from "../../hooks/useMouseAnimate";
+import Avatar from "../Avatar/Avatar";
 
 function HeroSection() {
   const { setCurrentVariant } = useMouseAnimate();
@@ -12,6 +13,8 @@ function HeroSection() {
       className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-40"
     >
       <div className="flex w-full">
+        <Avatar className="w-24 h-24 md:w-40 md:h-40 mr-10" noSpacing />
+
         <div>
           <div
             className="text-4xl md:text-6xl lg:text-8xl font-bold"
