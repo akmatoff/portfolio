@@ -1,4 +1,6 @@
+import { WORK_EXPERIENCE } from "../../constants/common";
 import { useMouseAnimate } from "../../hooks/useMouseAnimate";
+import WorkExperience from "../WorkExperience/WorkExperience";
 
 function AboutSection() {
   const { setCurrentVariant } = useMouseAnimate();
@@ -29,6 +31,12 @@ function AboutSection() {
           I'm looking for more challenges and opportunity to grow further. I'd
           love to hear from you what ideas we can bring into life together.
         </p>
+
+        <div className="flex flex-col gap-10 mt-10">
+          {WORK_EXPERIENCE.map((work, index) => (
+            <WorkExperience key={index} work={work} />
+          ))}
+        </div>
       </div>
     </section>
   );
