@@ -1,5 +1,6 @@
 import { SOCIAL_LINKS } from "../../constants/common";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
 import { useMouseAnimate } from "../../hooks/useMouseAnimate";
 
 function HeroSection() {
@@ -51,6 +52,13 @@ function HeroSection() {
               target="_blank"
             >
               <FaTelegram />
+            </a>
+            <a
+              className="hover:text-accent transition-colors mr-4"
+              href={SOCIAL_LINKS.email}
+              target="_blank"
+            >
+              <MdMail />
             </a>
           </div>
         </div>

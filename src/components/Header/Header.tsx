@@ -45,7 +45,7 @@ function Header() {
         <a className="text-primary-text" href="#hero">
           <div
             className={cn(
-              "py-2 px-6 rounded-full mr-4 transition-all duration-300 hover:bg-secondary",
+              "py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary",
               activeSection === "hero" ? "bg-accent text-primary" : ""
             )}
             onMouseEnter={() => setCurrentVariant("hover")}
@@ -57,7 +57,7 @@ function Header() {
         <a className="text-primary-text" href="#about">
           <div
             className={cn(
-              "py-2 px-6 rounded-full mr-4 transition-all duration-300 hover:bg-secondary",
+              "py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary",
               activeSection === "about" ? "bg-accent text-primary" : ""
             )}
             onMouseEnter={() => setCurrentVariant("hover")}
@@ -69,7 +69,7 @@ function Header() {
         <a href="#work">
           <div
             className={cn(
-              "py-2 px-6 rounded-full mr-4 transition-all duration-300 hover:bg-secondary",
+              "py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary",
               activeSection === "work" ? "bg-accent text-primary" : ""
             )}
             onMouseEnter={() => setCurrentVariant("hover")}
@@ -91,6 +91,8 @@ function Header() {
           </div>
         </a>
       </div>
+
+      <div className="flex-1"></div>
     </div>
   );
 }

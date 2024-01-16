@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;700&family=Montserrat:wght@100;200;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary-color: #f8f8f8;
-  --secondary-color: #c1c8c6;
-  --accent-color: #537564;
-  --text-color: #2e3735;
+  --primary-color: #1f2321;
+  --secondary-color: #39453f;
+  --accent-color: #4d7c65;
+  --text-color: #f8f8f8;
 }
 
 html {
@@ -19,11 +19,16 @@ body {
   padding: 0;
   margin: 0;
   color: var(--text-color);
-  font-family: Poppins, sans-serif;
+  font-family: Kanit, sans-serif;
 }
 
 a {
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
+}
+
+p {
+  margin: 12px 0;
+  letter-spacing: 0.1rem;
 }
