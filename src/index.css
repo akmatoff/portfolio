@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --primary-color: #f8f8f8;
   --secondary-color: #d1cfcf;
@@ -20,11 +16,11 @@ body {
   margin: 0;
   color: var(--text-color);
   font-family: Poppins, sans-serif;
-  cursor: none;
+  scroll-behavior: smooth;
 }
 
 a {
   color: var(--text-color);
   text-decoration: none;
-  cursor: none;
+  cursor: pointer;
 }

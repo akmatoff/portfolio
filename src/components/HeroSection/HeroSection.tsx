@@ -6,7 +6,10 @@ function HeroSection() {
   const { setCurrentVariant } = useMouseAnimate();
 
   return (
-    <section className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-20">
+    <section
+      id="hero"
+      className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-20"
+    >
       <div className="flex w-full">
         <div>
           <div
