@@ -5,10 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "avatar": "url('assets/photo.jpg')"
+      }
+    },
     colors: {
       'primary': "#f8f8f8",
-      'secondary': "#d1cfcf",
+      'secondary': "#c1c8c6",
       'primary-text': "#2e3735",
       "accent": "#537564",
       "transparent": "rgba(0, 0, 0, 0)"

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import cn from "classnames";
 import { useMouseAnimate } from "../../hooks/useMouseAnimate";
+import Avatar from "../Avatar/Avatar";
 
 function Header() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -29,8 +30,6 @@ function Header() {
       observer.current?.observe(section);
     });
 
-    console.log(activeSection);
-
     return () => {
       sections.forEach((section) => {
         observer.current?.unobserve(section);
@@ -39,12 +38,14 @@ function Header() {
   }, [activeSection]);
 
   return (
-    <div className="flex fixed items-center justify-center w-screen h-20 p-8">
+    <div className="flex fixed items-center w-screen h-24 p-10">
+      <Avatar />
+
       <div className="flex bg-accent bg-opacity-20 bg-blur backdrop-blur p-1 rounded-full text-sm font-light">
         <a className="text-primary-text" href="#hero">
           <div
             className={cn(
-              "py-2 px-6 rounded-full mr-4 transition-all duration-300",
+              "py-2 px-6 rounded-full mr-4 transition-all duration-300 hover:bg-secondary",
               activeSection === "hero" ? "bg-accent text-primary" : ""
             )}
             onMouseEnter={() => setCurrentVariant("hover")}
@@ -56,7 +57,7 @@ function Header() {
         <a className="text-primary-text" href="#about">
           <div
             className={cn(
-              "py-2 px-6 rounded-full mr-4 transition-all duration-300",
+              "py-2 px-6 rounded-full mr-4 transition-all duration-300 hover:bg-secondary",
               activeSection === "about" ? "bg-accent text-primary" : ""
             )}
             onMouseEnter={() => setCurrentVariant("hover")}
@@ -68,7 +69,7 @@ function Header() {
         <a href="#work">
           <div
             className={cn(
-              "py-2 px-6 rounded-full mr-4 transition-all duration-300",
+              "py-2 px-6 rounded-full mr-4 transition-all duration-300 hover:bg-secondary",
               activeSection === "work" ? "bg-accent text-primary" : ""
             )}
             onMouseEnter={() => setCurrentVariant("hover")}
@@ -80,7 +81,7 @@ function Header() {
         <a href="#contact">
           <div
             className={cn(
-              "py-2 px-6 rounded-full transition-all duration-300",
+              "py-2 px-6 rounded-full transition-all duration-300 hover:bg-secondary",
               activeSection === "contact" ? "bg-accent text-primary" : ""
             )}
             onMouseEnter={() => setCurrentVariant("hover")}

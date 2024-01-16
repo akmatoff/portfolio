@@ -11,12 +11,12 @@ export const useMouseAnimate = () => {
 
   const variants: Variants = {
     default: {
-      x: context.mouseState.position.x - 16,
-      y: context.mouseState.position.y - 16,
+      x: context.mouseState.position.x - 12,
+      y: context.mouseState.position.y - 12,
     },
     hover: {
-      x: context.mouseState.position.x - 16,
-      y: context.mouseState.position.y - 16,
+      x: context.mouseState.position.x - 32,
+      y: context.mouseState.position.y - 32,
       width: 72,
       height: 72,
       backgroundColor: "var(--secondary-color)",
