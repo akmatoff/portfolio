@@ -13,7 +13,7 @@ function MobileMenu() {
           </div>
 
           <div
-            className="flex flex-col px-20 text-3xl"
+            className="flex flex-col px-20 text-3xl "
             onClick={() => setIsOpen(false)}
           >
             <a className="text-primary-text" href="#hero">

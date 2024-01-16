@@ -1,7 +1,6 @@
 import AboutSection from "./components/AboutSection/AboutSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import Cursor from "./components/Cursor/Cursor";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import WorkSection from "./components/WorkSection/WorkSection";
@@ -16,7 +15,6 @@ function App() {
         <AboutSection />
         <WorkSection />
         <ContactSection />
-        <Footer />
         <Cursor />
       </MouseProvider>
     </div>

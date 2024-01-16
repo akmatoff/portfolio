@@ -8,9 +8,9 @@ function AboutSection() {
       id="about"
       className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-40"
     >
-      <div className="flex flex-col w-full text-xl md:text-2xl md:px-48">
+      <div className="flex flex-col w-full px-2 text-xl md:text-2xl md:px-48">
         <div
-          className="font-bold mb-4 text-6xl"
+          className="font-bold mb-4 text-3xl md:text-6xl"
           onMouseEnter={() => setCurrentVariant("hover")}
           onMouseLeave={() => setCurrentVariant("default")}
         >
