@@ -26,3 +26,19 @@ export const WORK_EXPERIENCE: IWorkExperience[] = [
     companyLink: "https://appboxo.com",
   },
 ];
+
+export interface IProject {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+}
+
+export const PROJECTS: IProject[] = [
+  {
+    title: "Codium KG",
+    description: "",
+    link: "https://codiumdev.com",
+    image: "",
+  },
+];

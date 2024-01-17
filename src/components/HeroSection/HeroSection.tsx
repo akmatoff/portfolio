@@ -12,7 +12,7 @@ function HeroSection() {
       id="hero"
       className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-40"
     >
-      <div className="flex flex-col w-full md:flex-row">
+      <div className="flex flex-col justify-center w-full md:flex-row">
         <Avatar
           className="w-24 h-24 md:w-40 md:h-40 mr-10 mb-10 md:mb-0"
           noSpacing

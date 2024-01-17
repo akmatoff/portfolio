@@ -22,7 +22,7 @@ function Header() {
           setActiveSection(visibleSection.id);
         }
       },
-      { threshold: 0.55 }
+      { threshold: 0.5 }
     );
 
     const sections = document.querySelectorAll("section");
@@ -30,6 +30,8 @@ function Header() {
     sections.forEach((section) => {
       observer.current?.observe(section);
     });
+
+    console.log(activeSection);
 
     return () => {
       sections.forEach((section) => {
@@ -57,18 +59,7 @@ function Header() {
             HOME
           </div>
         </a>
-        <a className="text-primary-text" href="#about">
-          <div
-            className={cn(
-              "py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary",
-              activeSection === "about" ? "bg-accent text-primary" : ""
-            )}
-            onMouseEnter={() => setCurrentVariant("hover")}
-            onMouseLeave={() => setCurrentVariant("default")}
-          >
-            ABOUT
-          </div>
-        </a>
+
         <a href="#work">
           <div
             className={cn(
@@ -79,6 +70,18 @@ function Header() {
             onMouseLeave={() => setCurrentVariant("default")}
           >
             WORK
+          </div>
+        </a>
+        <a className="text-primary-text" href="#about">
+          <div
+            className={cn(
+              "py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary",
+              activeSection === "about" ? "bg-accent text-primary" : ""
+            )}
+            onMouseEnter={() => setCurrentVariant("hover")}
+            onMouseLeave={() => setCurrentVariant("default")}
+          >
+            ABOUT
           </div>
         </a>
         <a href="#contact">

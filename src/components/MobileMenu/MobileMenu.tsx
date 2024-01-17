@@ -21,14 +21,14 @@ function MobileMenu() {
                 HOME
               </div>
             </a>
-            <a className="text-primary-text" href="#about">
-              <div className="py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary">
-                ABOUT
-              </div>
-            </a>
             <a href="#work">
               <div className="py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary">
                 WORK
+              </div>
+            </a>
+            <a className="text-primary-text" href="#about">
+              <div className="py-2 px-6 rounded-full mr-3 transition-all duration-300 hover:bg-secondary">
+                ABOUT
               </div>
             </a>
             <a href="#contact">

@@ -12,8 +12,8 @@ function App() {
       <MouseProvider>
         <Header />
         <HeroSection />
-        <AboutSection />
         <WorkSection />
+        <AboutSection />
         <ContactSection />
         <Cursor />
       </MouseProvider>
