@@ -11,10 +11,10 @@ export default {
       }
     },
     colors: {
-      'primary': "#1f2321",
-      'secondary': "#39453f",
+      'primary': "#1f1f23",
+      'secondary': "#4c4a58",
       'primary-text': "#f8f8f8",
-      "accent": "#4d7c65",
+      "accent": "#7964b0",
       "transparent": "rgba(0, 0, 0, 0)"
     },
   },

@@ -41,7 +41,7 @@ function Header() {
   }, [activeSection]);
 
   return (
-    <div className="flex fixed items-center w-screen h-24 p-10">
+    <div className="flex fixed z-30 items-center w-screen h-24 p-10">
       <Avatar
         className={activeSection !== "hero" ? "opacity-100" : "opacity-0"}
       />

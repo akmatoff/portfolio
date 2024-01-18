@@ -1,3 +1,5 @@
+import CodiumImage from "../assets/codium.png";
+
 export const SOCIAL_LINKS = {
   github: "https://github.com/akmatoff",
   likedin: "https://www.linkedin.com/in/akmatoff/",
@@ -37,8 +39,8 @@ export interface IProject {
 export const PROJECTS: IProject[] = [
   {
     title: "Codium KG",
-    description: "",
+    description: "Education platform",
     link: "https://codiumdev.com",
-    image: "",
+    image: CodiumImage,
   },
 ];
