@@ -46,7 +46,7 @@ function Header() {
         className={activeSection !== "hero" ? "opacity-100" : "opacity-0"}
       />
 
-      <div className="hidden md:flex bg-accent bg-opacity-20 bg-blur backdrop-blur p-1 rounded-full text-sm font-light">
+      <div className="hidden md:flex bg-secondary bg-opacity-50 bg-blur backdrop-blur p-1 rounded-full text-sm font-light">
         <a className="text-primary-text" href="#hero">
           <div
             className={cn(
@@ -82,18 +82,6 @@ function Header() {
             onMouseLeave={() => setCurrentVariant("default")}
           >
             ABOUT
-          </div>
-        </a>
-        <a href="#contact">
-          <div
-            className={cn(
-              "py-2 px-6 rounded-full transition-all duration-300 hover:bg-secondary",
-              activeSection === "contact" ? "bg-accent text-primary" : ""
-            )}
-            onMouseEnter={() => setCurrentVariant("hover")}
-            onMouseLeave={() => setCurrentVariant("default")}
-          >
-            CONTACT
           </div>
         </a>
       </div>

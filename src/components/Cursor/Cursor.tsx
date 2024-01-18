@@ -11,7 +11,7 @@ function Cursor() {
       transition={{
         type: "tween",
       }}
-      className="w-6 h-6 fixed left-0 top-0 z-10 border border-accent rounded-full pointer-events-none"
+      className="w-6 h-6 fixed left-0 top-0 z-40 border border-accent rounded-full pointer-events-none"
     ></motion.div>
   );
 }

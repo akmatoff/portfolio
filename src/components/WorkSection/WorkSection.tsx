@@ -4,12 +4,9 @@ import WorkCard from "./WorkCard";
 
 function WorkSection() {
   return (
-    <section
-      id="work"
-      className="flex flex-col justify-center w-screen min-h-screen p-10 md:p-0"
-    >
+    <section id="work" className="flex flex-col justify w-screen p-10">
       <Reveal>
-        <div className="flex w-full items-center justify-center">
+        <div className="flex w-full">
           {PROJECTS.map((project, index) => (
             <WorkCard key={index} project={project} />
           ))}

@@ -1,5 +1,5 @@
 import AboutSection from "./components/AboutSection/AboutSection";
-import ContactSection from "./components/ContactSection/ContactSection";
+// import ContactSection from "./components/ContactSection/ContactSection";
 import Cursor from "./components/Cursor/Cursor";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
@@ -14,7 +14,7 @@ function App() {
         <HeroSection />
         <WorkSection />
         <AboutSection />
-        <ContactSection />
+        {/* <ContactSection /> */}
         <Cursor />
       </MouseProvider>
     </div>

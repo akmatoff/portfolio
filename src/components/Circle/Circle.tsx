@@ -12,7 +12,7 @@ function Circle({ children }: Props) {
     <div
       onMouseEnter={() => setCurrentVariant("hover")}
       onMouseLeave={() => setCurrentVariant("default")}
-      className="bg-gradient-to-r from-secondary rounded-full grid place-content-center w-20 h-20 flex-shrink-0 border border-transparent transition hover:border-secondary"
+      className="bg-gradient-to-r from-secondary rounded-full grid place-content-center w-20 h-20 flex-shrink-0 border border-transparent transition hover:border-highlight"
     >
       {children}
     </div>

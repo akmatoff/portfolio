@@ -10,7 +10,7 @@ function WorkCard({ project }: Props) {
 
   return (
     <div
-      className="relative w-9/12 border border-secondary rounded-xl"
+      className="relative w-4/6 border border-highlight rounded-xl"
       onMouseEnter={() => setCurrentVariant("hover")}
       onMouseLeave={() => setCurrentVariant("default")}
       onClick={() => window.open(project.link, "_blank")}

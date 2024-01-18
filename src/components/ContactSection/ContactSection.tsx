@@ -16,7 +16,7 @@ function ContactSection() {
           <div
             onMouseLeave={() => setCurrentVariant("default")}
             onMouseEnter={() => setCurrentVariant("hover")}
-            className="flex items-center gap-6 px-6 md:px-16 py-6 rounded-3xl bg-gradient-to-r from-secondary border border-secondary"
+            className="flex items-center gap-6 px-6 md:px-16 py-6 rounded-3xl bg-gradient-to-r from-secondary border border-highlight"
           >
             <MdMail className="text-4xl flex-shrink-0" />
             <p className="font-light">azim.akmatov1@gmail.com</p>

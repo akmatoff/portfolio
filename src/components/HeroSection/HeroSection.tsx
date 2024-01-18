@@ -29,7 +29,7 @@ function HeroSection() {
               AZIM AKMATOV
             </div>
             <div
-              className="font-light text-md md:text-lg"
+              className="font-light text-md md:text-lg text-accent"
               onMouseEnter={() => setCurrentVariant("hover")}
               onMouseLeave={() => setCurrentVariant("default")}
             >

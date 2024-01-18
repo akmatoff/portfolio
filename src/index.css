@@ -5,10 +5,12 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #1f1f23;
-  --secondary-color: #4c4a58;
-  --accent-color: #647db0;
-  --text-color: #f8f8f8;
+  --primary-color: #141416;
+  --secondary-color: #302e35;
+  --highlight-color: #3f3c46;
+  --accent-color: #83bd59;
+  --text-color: #f3f3f3;
+  --text-secondary-color: #b4b4b4;
 }
 
 html {
@@ -30,6 +32,7 @@ a {
 }
 
 p {
-  margin: 12px 0;
+  margin: 14px 0;
+  font-weight: 300;
   letter-spacing: 0.1rem;
 }

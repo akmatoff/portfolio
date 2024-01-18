@@ -7,7 +7,7 @@ interface Props {
 
 function Reveal({ children }: Props) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-150px" });
+  const isInView = useInView(ref, { once: true, margin: "-120px" });
 
   const controls = useAnimation();
 
