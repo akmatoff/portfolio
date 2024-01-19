@@ -19,9 +19,19 @@ function WorkCard({ project }: Props) {
         src={project.image}
         className="rounded-xl w-full h-full opacity-70 hover:opacity-100 transition duration-700"
       />
-      <div className="absolute bottom-6 left-6">
-        <h1 className="font-bold text-lg">{project.title}</h1>
-        <p className="text-sm my-0 font-thin">{project.description}</p>
+      <div className="flex w-full justify-between absolute bottom-6 px-6">
+        <div>
+          <h1 className="font-bold text-lg drop-shadow-md">{project.title}</h1>
+          <p className="text-sm my-0 font-thin drop-shadow-md">
+            {project.description}
+          </p>
+        </div>
+
+        {project.isFeatured && (
+          <div className="border-2 border-primary-text px-4 py-3 rounded-full text-sm font-bold drop-shadow-lg">
+            FEATURED
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import CodiumImage from "../assets/codium.png";
+import ShopboxoImage from "../assets/shopboxo.png";
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/akmatoff",
@@ -34,6 +35,7 @@ export interface IProject {
   description: string;
   link: string;
   image: string;
+  isFeatured: boolean;
 }
 
 export const PROJECTS: IProject[] = [
@@ -42,5 +44,13 @@ export const PROJECTS: IProject[] = [
     description: "Education platform",
     link: "https://codiumdev.com",
     image: CodiumImage,
+    isFeatured: false,
+  },
+  {
+    title: "Shopboxo",
+    description: "E-commerce platform",
+    link: "https://shopboxo.io",
+    image: ShopboxoImage,
+    isFeatured: true,
   },
 ];
