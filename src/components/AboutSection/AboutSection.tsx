@@ -38,9 +38,17 @@ function AboutSection() {
                 <p>
                   I got interested in making web pages with HTML and CSS at
                   school when I was around 8th grade. But got into seriously
-                  studying programming at college.
+                  studying programming at college in 2018.
                 </p>
-                <p className="mb-0"></p>
+                <p className="mb-0">
+                  I studied informatics at IUCA college in Tokmok - the city
+                  where I'd grown
+                </p>
+                <p>
+                  My first and currently last company is Appboxo. I can say it
+                  is the place where I stepped into adult life. It helped me to
+                  grow and learn a lot of things.
+                </p>
               </div>
             </div>
 

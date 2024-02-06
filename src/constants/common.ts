@@ -36,6 +36,12 @@ export interface IProject {
   link: string;
   image: string;
   isFeatured: boolean;
+  stack: IStack[];
+}
+
+export interface IStack {
+  title: string;
+  icon?: string;
 }
 
 export const PROJECTS: IProject[] = [
@@ -44,6 +50,14 @@ export const PROJECTS: IProject[] = [
     description: "Education platform",
     link: "https://codiumdev.com",
     image: CodiumImage,
+    stack: [
+      {
+        title: "Next.js",
+      },
+      {
+        title: "React",
+      },
+    ],
     isFeatured: false,
   },
   {
@@ -51,6 +65,14 @@ export const PROJECTS: IProject[] = [
     description: "E-commerce platform",
     link: "https://shopboxo.io",
     image: ShopboxoImage,
+    stack: [
+      {
+        title: "Next.js",
+      },
+      {
+        title: "React",
+      },
+    ],
     isFeatured: true,
   },
 ];
