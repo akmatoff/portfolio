@@ -70,7 +70,7 @@ function AboutSection() {
                         <MdMail />
                       </div>
                     </a>
-                    <a href="akmatoff-resume.pdf" download>
+                    <a href="Azim Akmatov Resume.pdf" download>
                       <div className="h-9 w-36 flex justify-center items-center gap-2 bg-highlight rounded-full text-sm hover:bg-secondary transition duration-700">
                         Resume
                         <MdOutlineFileDownload className="text-xl" />
